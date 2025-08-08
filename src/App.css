@@ -1,0 +1,85 @@
+/* src/App.css */
+:root {
+  --dark-bg: #121212;
+  --dark-bg-secondary: #1e1e1e;
+  --primary-color: #ffc107; /* Zlatá/žlutá */
+  --text-light: #e0e0e0;
+  --text-muted: #7d7d7d;
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.text-primary { color: var(--primary-color) !important; }
+
+/* === Navbar === */
+.navbar {
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(18, 18, 18, 0.85) !important;
+  backdrop-filter: blur(10px);
+}
+
+.nav-link {
+  color: var(--text-light) !important;
+  transition: color 0.3s;
+  padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #111;
+  transition: all 0.3s;
+}
+.btn-primary:hover {
+  background-color: #ffca2c;
+  border-color: #ffca2c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.2);
+}
+
+/* === Sekce === */
+section {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+section.bg-darker {
+  background-color: var(--dark-bg-secondary);
+}
+
+/* Hero sekce */
+#hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('./assets/hostinec-vnitrek.jpg') no-repeat center center;
+  background-size: cover;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+/* Feature ikony */
+.feature-icon-box i {
+  transition: transform 0.3s ease-in-out;
+}
+.feature-icon-box:hover i {
+  transform: translateY(-10px);
+}
