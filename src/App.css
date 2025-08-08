@@ -83,3 +83,7 @@ section.bg-darker {
 .feature-icon-box:hover i {
   transform: translateY(-10px);
 }
+.page-container {
+  padding-top: 100px; /* Vytvoří 100px místa pro přilepenou navigaci */
+  padding-bottom: 40px; /* Malé odsazení i zespodu */
+}

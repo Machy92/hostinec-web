@@ -51,7 +51,8 @@ function ReservationPage() {
     };
 
     return (
-        <div className="container mt-5">
+    <div className="page-container">
+      <div className="container">
             <h2>Vytvořit rezervaci</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
@@ -86,6 +87,8 @@ function ReservationPage() {
                 {message && <div className="alert alert-info mt-3">{message}</div>}
             </form>
         </div>
+    </div>
+
     );
 }
 
