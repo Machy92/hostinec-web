@@ -1,8 +1,8 @@
-// src/supabaseClient.js
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = 'https://ducvummhnhocqrlpkeup.supabase.co';       // Vložte sem svoji URL z nastavení Supabase
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR1Y3Z1bW1obmhvY3FybHBrZXVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ0NzQ3ODgsImV4cCI6MjA3MDA1MDc4OH0.v82_51ScviRs2ESMepBSEsWmNdN6UADakLzFyBjplOM';  // Vložte sem svůj anon public klíč
+// Načtení klíčů z proměnných prostředí
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
