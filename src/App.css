@@ -1,22 +1,21 @@
-/* src/App.css */
 :root {
   --dark-bg: #121212;
   --dark-bg-secondary: #1e1e1e;
   --primary-color: #ffc107; /* Zlatá/žlutá */
   --text-light: #e0e0e0;
-  --text-muted: #7d7d7d;
+  --text-muted: #aaa;
   --font-heading: 'Oswald', sans-serif;
   --font-body: 'Roboto', sans-serif;
-}
-
-.text-muted {
-  color: var(--text-muted) !important;
 }
 
 body {
   background-color: var(--dark-bg);
   color: var(--text-light);
   font-family: var(--font-body);
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-primary { color: var(--primary-color) !important; }
+
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
 
 /* === Navbar === */
 .navbar {
@@ -39,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-light) !important;
   transition: color 0.3s;
   padding: 0.5rem 1rem !important;
+  cursor: pointer;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -76,6 +80,11 @@ section.bg-darker {
   border-bottom: 3px solid var(--primary-color);
 }
 
+#hero img.logo {
+  max-width: 400px;
+  margin-bottom: 1.5rem;
+}
+
 /* Feature ikony */
 .feature-icon-box i {
   transition: transform 0.3s ease-in-out;
@@ -83,7 +92,39 @@ section.bg-darker {
 .feature-icon-box:hover i {
   transform: translateY(-10px);
 }
+
+/* Kontejner pro stránky s fixní navigací */
 .page-container {
-  padding-top: 100px; /* Vytvoří 100px místa pro přilepenou navigaci */
-  padding-bottom: 40px; /* Malé odsazení i zespodu */
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+/* Styly pro alergeny v menu */
+.allergen-list {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.allergen-prefix {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Styly pro legendu alergenů */
+.allergen-legend-title {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.allergen-legend-list {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Na větších obrazovkách zobrazí legendu ve dvou sloupcích */
+@media (min-width: 768px) {
+  .column-count-2 {
+    column-count: 2;
+  }
 }

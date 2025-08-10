@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ReservationPage from './pages/ReservationPage';
 import AdminPage from './pages/AdminPage';
+import MenuPage from './pages/MenuPage';
 
 function App() {
   // Tento blok inicializuje animace při prvním načtení aplikace
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/rezervace" element={<ReservationPage />} />
           <Route path="/admin" element={<AdminPage />} />
+          <Route path="/menu" element={<MenuPage />} />
         </Routes>
       </main>
     </Router>

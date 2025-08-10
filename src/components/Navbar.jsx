@@ -38,6 +38,9 @@ function Navbar() {
             <li className="nav-item">
               <ScrollLink className="nav-link" to="galerie" spy={true} smooth={true} offset={-70} duration={500}>Galerie</ScrollLink>
             </li>
+            <li className="nav-item">
+        <RouterLink className="nav-link" to="/menu">Menu</RouterLink>
+    </li>
             <li className="nav-item ms-lg-4 mt-2 mt-lg-0">
               <RouterLink className="btn btn-primary fw-bold" to="/rezervace">Rezervovat stůl</RouterLink>
             </li>
