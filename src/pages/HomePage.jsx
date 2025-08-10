@@ -1,5 +1,6 @@
 // src/pages/HomePage.jsx
 import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 function HomePage() {
   return (
